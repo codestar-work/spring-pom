@@ -3,10 +3,10 @@ import org.springframework.boot.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class MyController {
 	
-	@RequestMapping("/") @ResponseBody
+	@RequestMapping("/")
 	String index() {
 		return "Hello World!";
 	}
